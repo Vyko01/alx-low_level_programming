@@ -3,10 +3,10 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * discription: " check if numbers are positive neg of equal"
+ * discription: "check if numbers are positive neg of equal"
  * return: always (0)
  */
-int main(0)
+int main(void)
 {
 	int n;
 
