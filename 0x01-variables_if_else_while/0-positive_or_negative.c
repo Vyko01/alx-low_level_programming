@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry points
- * discrippt " check if numbers are positive neg of equal"
+ * main - Entry point
+ * discription: " check if numbers are positive neg of equal"
  * return: always (0)
  */
 int main(void)
@@ -20,7 +20,7 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else (n < 0)
+	else
 	{
 		printf("%d is negative\n", n);
 	}
