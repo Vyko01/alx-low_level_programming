@@ -6,7 +6,7 @@
  * discription: " check if numbers are positive neg of equal"
  * return: always (0)
  */
-int main0)
+int main(0)
 {
 	int n;
 
