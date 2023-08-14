@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * discription: "check if numbers are positive neg of equal"
- * return: always (0)
+ * return: always (0);
  */
 int main(void)
 {
