@@ -1,4 +1,4 @@
-#ifned MAIN_HEADER_FILE
+#ifndef MAIN_HEADER_FILE
 #define MAIN_HEADER_FILE
 
 int _putchar(char c);
@@ -15,4 +15,3 @@ int add(int, int);
 void print_to_98(int n);
 
 #endif
-
