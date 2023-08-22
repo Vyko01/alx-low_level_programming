@@ -2,7 +2,7 @@
 #include <stdio>
 
 /**
- *rev_string - - imprime en reversa
+ *rev_string - imprime en reversa
  * @s: string
  * return: 0
  */
