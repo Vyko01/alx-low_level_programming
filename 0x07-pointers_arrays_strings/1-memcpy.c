@@ -9,7 +9,8 @@
   * Return: copied memory with byte changed
   */
 
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n
+		)
 {
 	int i = 0;
 	int r = 0;
@@ -19,6 +20,5 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 		dest[r] = src[r];
 		n--;
 	}
-
 	return (dest);
 }
