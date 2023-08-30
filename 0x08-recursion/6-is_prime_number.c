@@ -8,7 +8,7 @@
  * Return: 0 if not prime number, 1 if prime.
  */
 
-int helperFunction(int num, int i)
+int helperFunction(int num, int i);
 
 {
 	if (i < num)
