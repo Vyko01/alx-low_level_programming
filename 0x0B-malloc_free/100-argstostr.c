@@ -2,16 +2,17 @@
 #include <stdlib.h>
 
 /**
- * argstostr - main entry
- * @ac: int input
- * @av: double pointer array
- * Return: 0
+ * argstostr - concatenate all program arguments
+ * @ac: argument count
+ * @av: argument vector
+ * Return: a pointer to array of char
  */
 
-char *argstostr(int ac, cahr **av)
+char *argstostr(int ac, char **av)
 {
-	int i, n, r = 0, l = 0;
-	char *str;
+	char *aout;
+	int i ,n , k = 0, len = 0;
+
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -19,24 +20,25 @@ char *argstostr(int ac, cahr **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (n = 0; av[i][n]; n++)
-			l++;
+			len++;
 	}
-	l += ac;
+	len += ac;
 
-	str = malloc(sizeof(char) * l + 1);
-	if (str == NULL)
+	aout = malloc(sizeof(char) * len + 1);
+	if (aout == NULL)
 		return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
-	for (i = 0; av[i][n]; n++)
-	{
-		str[r] = av[i][n];
-		r++;
+		for (n = 0; av[i][n]; n++)
+		{
+			aout[k] = av[i][n];
+			k++;
+		}
+		if (aout[k] == '\0')
+		{
+			aout[k++] = '\n';
+		}
 	}
-	if (str[r] == '\0')
-	{
-		str[r++] = '\n';
-	}
-	}
-	return (str);
+	return (aout);
 }
