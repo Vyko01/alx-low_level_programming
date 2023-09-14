@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_string - print string followed by a new line
+ * print_strings - print string followed by a new line
  * @separator: the string to be printed between strings
  * @n: the number of strings passed to the function
  * @...: a variable number of strings to be printed
