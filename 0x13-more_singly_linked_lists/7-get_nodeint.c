@@ -2,8 +2,8 @@
 
 /**
  * get_nodeint_at_index - returns the node at a certain index in a linked list
- * @head: first node in the linked list
- * @index: index of the node to returns.
+ * @head: First node in the linked lists.
+ * @index: Index of the node to returns.
  *
  * Return: pointer to the node we're looking for, or NULL.
  */

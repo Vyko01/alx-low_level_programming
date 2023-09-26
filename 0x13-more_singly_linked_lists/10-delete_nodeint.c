@@ -2,10 +2,10 @@
 
 /**
  * delete_nodeint_at_index - deletes a node in a linked list at a certain indexs.
- * @head: pointer to the first element in the lists.
- * @index: index of the node to deletes
+ * @head: Pointers to the first element in the lists.
+ * @index: Index of the node to deleted.
  *
- * Return: 1 (Success), or -1 (Fail)
+ * Return: 1 (Succesful), or -1 (Failed)
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)

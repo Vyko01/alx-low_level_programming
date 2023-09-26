@@ -3,10 +3,10 @@
 /**
  * insert_nodeint_at_index - inserts a new node in a linked list.
  * @head: pointer to the first node in the lists.
- * @idx: index where the new node is added.
- * @n: data to insert in the new nodes
+ * @index: index where the new node is added.
+ * @n: Data to insert in the new nodes
  *
- * Return: pointer to the new node, or NULL
+ * Return: Pointer to the new node, or NULL.
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -22,16 +22,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new->n = n;
 	new->next = NULL;
 
-	if (idx == 0)
+	if (index == 0)
 	{
 		new->next = *head;
 		*head = new;
 		return (new);
 	}
 
-	for (i = 0; temp && i < idx; i++)
+	for (i = 0; temp && i < index; i++)
 	{
-		if (i == idx - 1)
+		if (i == index - 1)
 		{
 			new->next = temp->next;
 			temp->next = new;
